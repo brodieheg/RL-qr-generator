@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/@bitjson/qr-code@1.0.2/dist/qr-code.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket Lawyer QR Code Generator & Download</title>
+</head>
+<body>
+    <div id="large-container" style="text-align: center;">
+        <h2>Rocket Lawyer QR Code Generator</h2>     
+        <div id="qr-container" style="margin-top: 20px; margin-bottom: 20px; display: inline-block; padding: 20px; background: white;">
+            <qr-code
+                id="qr1"
+                contents="https://rocketlawyer.com/"
+                module-color="#000"
+                position-ring-color="#990001"
+                position-center-color="#9e9e9e"
+                style="width: 400px; height: 400px; background-color: #fff;">
+                <img src="./src/logo.svg" slot="icon">
+            </qr-code>
+        </div>
+        <div id="url-container"></div>
+        <div>
+
+            <input type="text" id="urlInput" placeholder="Enter URL here" style="padding: 8px; width: 250px;">
+            <br>
+            <span>
+                <button id="generateBtn" style="padding: 8px;">Generate</button>
+                <button id="downloadBtn" style="padding: 8px; margin-top: 10px">Download</button>
+            </span>
+            
+        </div>
+    </div>
+<script type = "module" src = "./src/main.js" ></script>
+</body>
+</html>
