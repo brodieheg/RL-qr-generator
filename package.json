@@ -12,6 +12,7 @@
     "vite": "^6.1.0"
   },
   "dependencies": {
+    "@bitjson/qr-code": "^1.0.2",
     "downloadjs": "^1.4.7",
     "html-to-image": "^1.11.13"
   }
